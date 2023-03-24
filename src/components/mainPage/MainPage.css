@@ -1,0 +1,323 @@
+/* Header */
+
+#header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: -moz-flex-end;
+    -webkit-align-items: -webkit-flex-end;
+    -ms-align-items: -ms-flex-end;
+    align-items: flex-end;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #1f1815;
+    background-attachment: scroll, scroll;
+    background-image: url("../../images/petrik.jpg");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    left: 0;
+    padding: 8em 4em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 35%;
+}
+
+
+#header>* {
+    -moz-flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-shrink: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+#header>.inner {
+    -moz-flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    margin: 0 0 2em 0;
+}
+
+
+#header strong,
+#header b {
+    color: #ffffff;
+}
+
+#header h2,
+#header h3,
+#header h4,
+#header h5,
+#header h6 {
+    color: #ffffff;
+}
+
+#header h1 {
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 1.35em;
+    line-height: 1.75em;
+    margin: 0;
+}
+
+#header .image.avatar {
+    /* margin: 0 0 1em 0; */
+    width: 6.25em;
+}
+
+
+
+
+/* Image */
+
+.image {
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.image img {
+    /* height: 230px; */
+    border-radius: 0.35em;
+    display: block;
+}
+
+.image.left {
+    float: left;
+    margin: 0 1.5em 1em 0;
+    top: 0.25em;
+}
+
+.image.right {
+    float: right;
+    margin: 0 0 1em 1.5em;
+    top: 0.25em;
+}
+
+
+.image.left,
+.image.right {
+    max-width: 40%;
+}
+
+.image.left img,
+.image.right img {
+    width: 100%;
+}
+
+.image.avatar {
+    border-radius: 50%;
+    height: 100px;
+
+}
+
+.image.avatar:before {
+    display: none;
+}
+
+.image.avatar img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+/* MEDIA QUERY */
+
+
+@media screen and (max-width: 1280px) {
+
+    /* Header */
+
+    #header {
+        padding: 6em 3em 3em 3em;
+        width: 30%;
+    }
+
+    #header h1 {
+        font-size: 1.25em;
+    }
+
+    #header h1 br {
+        display: none;
+    }
+
+    #header>.inner {
+        margin-bottom: 0;
+    }
+
+}
+
+/* Medium */
+
+@media screen and (max-width: 980px) {
+
+    /* Basic */
+
+    h1 br,
+    h2 br,
+    h3 br,
+    h4 br,
+    h5 br,
+    h6 br {
+        display: none;
+    }
+
+
+    /* Header */
+
+    #header {
+        background-attachment: scroll;
+        background-position: center bottom;
+        background-size: cover;
+        left: auto;
+        padding: 7em 4em;
+        position: relative;
+        text-align: center;
+        top: auto;
+        width: 100%;
+        height: 30rem;
+        display: block;
+
+    }
+
+    #header h1 {
+        font-size: 1.6em;
+    }
+
+    #header h1 br {
+        display: inline;
+    }
+
+    .image.avatar{
+        visibility: hidden;
+    }
+
+
+
+}
+
+
+
+
+/* Small */
+
+@media screen and (max-width: 736px) {
+
+    /* Basic */
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+
+
+    /* Header */
+
+    #header {
+        padding: 2.25em 1.5em;
+        height: 25rem;
+    }
+
+    #header h1 {
+        font-size: 1.35em;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+
+    /* Header */
+
+    #header {
+        padding: 2.5em 1.5em;
+        height: 25rem;
+    }
+
+    #header h1 {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    /* Header */
+
+    #header {
+        padding: 2.25em 1.5em;
+        height: 20rem;
+    }
+
+    #header h1 {
+        font-size: 1.2em;
+    }
+
+}
+
+
+/* XSmall */
+
+@media screen and (max-width: 480px) {
+
+    /* Header */
+
+    #header {
+        padding: 4.5em 1.5em;
+    }
+
+    #header h1 br {
+        display: none;
+    }
+
+   
+
+}
+
+
+@media screen and (max-width: 410px) {
+
+    /* Header */
+
+    .image.avatar{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 380px) {
+
+    /* Header */
+
+    #header {
+        padding: 2.5em 1.5em;
+    }
+
+    #header h1 br {
+        display: none;
+    }
+
+    .image.avatar{
+        display: none;
+    }
+
+}

@@ -1,0 +1,268 @@
+
+
+.headerContainer {
+    background-image: url(../../images/divinero.png);
+    background-position: top, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.app-reference {
+  color: #34b1c4;
+  border-bottom: 1px #1aa0b5 solid;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.mainPic {
+    text-align: center;
+}
+
+.work-section {
+    margin: 0 -2rem !important;
+}
+
+.project-section {
+  margin: 10px 0 0 0 !important;
+  padding: 10px 0 0 0 !important;
+}
+
+/* back Button */
+
+.btn-close {
+  margin-top: 10px;
+}
+
+
+.btn-back {
+  font-size: 13px;
+  margin-right: 5px;
+  margin-left: -10px;
+  background-color:#f3efef;
+  
+}
+
+
+
+
+
+
+
+/* FLEX COLUMNS */
+.flex-columns{
+    border-bottom: solid 2px rgb(230, 230, 230);
+    padding: 15px 0;
+
+}
+
+.flex-columns:last-child{
+    border-bottom: none;
+}
+
+
+.flex-columns.flex-reverse .flexRow{
+    flex-direction: row-reverse;
+  }
+  
+  .flex-columns .flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .flex-columns .column .column-1,
+  .flex-columns .column .column-2 {
+    height: 100%;
+  }
+  
+  video {
+    cursor: pointer;
+  }
+  
+
+  .flex-columns video.borderR-r{
+    border-top-right-radius: 8%;
+    border-bottom-right-radius: 4%;
+  }
+  .flex-columns video.borderR-l{
+    border-top-left-radius: 8%;
+    border-bottom-left-radius: 4%;
+  }
+
+  
+  .flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px 0 10px;
+  }
+  
+  .flex-columns h3 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .flex-columns h4 {
+    margin-bottom: 10px;
+  }
+  
+
+  
+/* MOBILE */
+@media (max-width: 1310px) {
+
+  .headerContainer {
+    height: 23rem;
+  }
+}
+
+@media (max-width: 1100px) {
+   
+  .flex-columns .flexRow,
+  .flex-columns.flex-reverse .flexRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    
+  .flex-columns .column-2{
+    align-items: center;
+  }
+
+  video{
+    border-top-left-radius: 6% !important;
+    border-top-right-radius: 6% !important;
+    border-bottom-right-radius: 4% !important;
+    border-bottom-left-radius: 4% !important;
+  }
+ 
+}
+
+@media (max-width: 980px) {
+   
+  .flex-columns .flexRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .flex-columns.flex-reverse .flexRow{
+    flex-direction: row-reverse;
+  }
+    
+  .flex-columns .column-2{
+    padding: 0 10px 0 10px;
+  }
+
+  .work-section {
+    margin: 0 !important;
+  }
+
+}
+
+
+@media (max-width: 850px) {
+   
+  .flex-columns .flexRow,
+  .flex-columns.flex-reverse .flexRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    
+  .flex-columns .column-2{
+    align-items: center;
+  }
+ 
+}
+
+
+
+@media (max-width: 768px) {
+   
+    .flex-items {
+      flex-direction: column;
+    }
+  
+
+
+    .headerContainer {
+
+      width: auto;
+      height: 300px;
+    }
+  
+   
+  }
+  
+  @media (max-width: 620px) {
+   
+    .headerContainer {
+
+      height: 260px;
+      }
+
+      
+    }
+  
+  @media (max-width: 515px) {
+   
+    .headerContainer {
+
+      height: 210px;
+      }
+      video {
+        width: 380px;
+        border-radius: 0% !important;
+      }
+
+      
+    }
+
+  @media (max-width: 425px) {
+   
+    .headerContainer {
+
+      height: 190px;
+      }
+
+    }
+
+  @media (max-width: 390px) {
+   
+    .headerContainer {
+
+      height: 170px;
+      }
+      video {
+        width: 340px;
+        height: 220px;
+      }
+
+      
+    }
+
+  @media (max-width: 390px) {
+   
+      video {
+        width: 300px;
+        height: 160px;
+      }
+
+      
+    }
+
