@@ -1,7 +1,6 @@
 
 import divineroImg from '../../images/divinero.png'
 import sayHiLogoBlack from '../../images/sayHiLogoBlack.png'
-
 import './Work.css'
 
 
@@ -11,7 +10,6 @@ const Work = ({ setSeeDivinero }) => {
         setSeeDivinero(true)
         window.scrollTo(0, 0)
     }
-
 
     return <>
         <section>
@@ -23,7 +21,7 @@ const Work = ({ setSeeDivinero }) => {
                     <p>Fully functional React App for ordering food online, utilizing powerful features like Pagination, React Context, and more, powered by Firebase's real-time database, for processesing orders in an instant.</p>
                 </article>
                 <article className="col-6 col-12-xsmall work-item">
-                    <a href="https://say-hi-nine.vercel.app/"> <div className="image fit thumb"><img src={sayHiLogoBlack} alt="" /></div></a>
+                    <a href="https://say-hi-nine.vercel.app/" target="_blank" rel="noreferrer"> <div className="image fit thumb"><img src={sayHiLogoBlack} alt="" /></div></a>
                     <h3>REAL-TIME FULL STACK MESSAGING APP</h3>
                     <p>In this project I used Next.js as well as Upstash Redis as our database, React.js and Tailwind for the user interface, and the code is written in TypeScript.</p>
                 </article>
